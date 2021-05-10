@@ -1,5 +1,14 @@
 # FormulariosApp
 
+App relacionada con formularios, sus validaciones, templates, reactivos.
+
+![image](https://user-images.githubusercontent.com/56207509/117598387-56918280-b10d-11eb-8958-27a4f80a7167.png)
+
+![image](https://user-images.githubusercontent.com/56207509/117598310-2a760180-b10d-11eb-9ace-68addf93ee98.png)
+
+![image](https://user-images.githubusercontent.com/56207509/117598337-3792f080-b10d-11eb-93df-cabae9351c25.png)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
 
 ## Development server
