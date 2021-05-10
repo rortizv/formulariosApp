@@ -13,9 +13,9 @@ export class BasicosComponent implements OnInit {
 
   //Si queremos inicializar algún campo del formulario con algún valor
   initForm = {
-    // producto: '',
-    // precio: 0,
-    // existencias: 0
+    producto: '',
+    precio: 0,
+    existencias: 0
   }
 
   constructor() { }
@@ -36,9 +36,9 @@ export class BasicosComponent implements OnInit {
   guardar() {
 
     this.miFormulario.resetForm({
-      // producto: '',
-      // precio: 0,
-      // existencias: 0
+      producto: '',
+      precio: 0,
+      existencias: 0
     });
   }
 
