@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, Validator, FormArray, FormControl } from '@angular/forms';
 
 @Component({
@@ -25,12 +25,6 @@ export class DinamicosComponent {
 
   constructor(private formBuilder: FormBuilder ) { }
 
-  ngOnInit() {
-    this.miFormulario.reset({
-      nombre: ''
-    })
-  }
-
   campoEsValido( campo: string ) {
     return this.miFormulario.controls[campo].errors 
         && this.miFormulario.controls[campo].touched;
@@ -44,6 +38,10 @@ export class DinamicosComponent {
 
     this.nuevoFavorito.reset();
 
+  }
+
+  borrar(i: number) {
+    this.favoritosArray.removeAt(i);
   }
 
   guardar() {
