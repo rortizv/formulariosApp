@@ -11,11 +11,10 @@ export class BasicosComponent implements OnInit {
 
   @ViewChild('miFormulario') miFormulario!: NgForm;
 
-  //Si queremos inicializar algún campo del formulario con algún valor
   initForm = {
-    producto: '',
-    precio: 0,
-    existencias: 0
+    producto: 'RTX 4080ti',
+    precio: 10,
+    existencias: 10
   }
 
   constructor() { }
@@ -33,10 +32,13 @@ export class BasicosComponent implements OnInit {
             && this.miFormulario?.controls.precio?.value < 0;
   }
 
+  // guardar( miFormulario: NgForm ) {
   guardar() {
+    // console.log( this.miFormulario );
+    console.log('Posteo correcto');
 
     this.miFormulario.resetForm({
-      producto: '',
+      producto: 'Algo',
       precio: 0,
       existencias: 0
     });
